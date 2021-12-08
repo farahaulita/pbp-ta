@@ -1,0 +1,13 @@
+GitHub Actions script untuk Flutter (khususnya untuk PAS PBP Gasal 2021/2022).
+ 
+Edisi REV01.
+ 
+Dibutuhkan secret repository yang bernama "GH_TOKEN" dan berisi personal access token salah satu anggota kelompok untuk keperluan automated release.
+ 
+Develop akan ditrigger apabila terdapat pull request dan push ke branch 'develop'. Pre-Release akan ditrigger apabila terdapat pull request ke branch 'main'. Release akan ditrigger apabila terdapat push ke branch 'main'.
+ 
+Perbedaan Pre-Release dan Release adalah Pre-Release akan membuat APK dan mengunggahnya ke Artifacts, sedangkan Release akan merilis APK dengan status "release" dan spesifikasi versi dan tag sesuai dengan versi yang tertera pada `pubspec.yaml` dan deskripsi diisi dengan tanggal perilisan (Waktu Indonesia Barat) secara otomatis.
+ 
+Ketiga file ini diletakkan pada direktori ".github/workflows".
+ 
+Made by Muhammad Athallah (2021).
